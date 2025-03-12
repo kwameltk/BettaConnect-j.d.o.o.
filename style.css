@@ -1,0 +1,113 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#hero {
+    background-image: url('IMG-20240120-WA0036.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+#consultationBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#services {
+    background-color: #f4f4f4;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-column {
+    width: 45%;
+    margin: 10px;
+}
+
+.accordion {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    padding: 15px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+}
+
+.accordion-icon {
+    font-size: 20px;
+}
+
+#testimonials {
+    background-color: #e9ecef;
+    overflow: hidden; /* Prevent overflowing content */
+}
+
+.testimonial-slider {
+    display: flex; /* Use flexbox for layout */
+    transition: transform 0.9s ease-in-out; /* Add smooth transition */
+    width: 100%; /* Adjust width to fit all testimonials */
+}
+
+.testimonial {
+    flex: 1 0 100%; /* Each testimonial takes 100% width */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#contact {
+    background-color: #f8f9fa;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-column {
+        width: 90%;
+    }
+}
